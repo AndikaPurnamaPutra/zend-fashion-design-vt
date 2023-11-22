@@ -1,0 +1,224 @@
+.section-header {
+  padding-block: 23px;
+
+  .container {
+    &-header {
+      padding-inline: 17px;
+      justify-content: flex-end;
+
+      @include responsive(xl) {
+        justify-content: space-around;
+      }
+
+      .content {
+        &-left {
+          @include flex(column, flex-start, flex-end);
+          margin-top: 116px;
+
+          @include responsive(xl) {
+            margin-top: 0;
+          }
+
+          .subtext {
+            &-text {
+              &-desc {
+                color: $white;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+                max-width: 291px;
+              }
+
+              &-display {
+                color: $white;
+                font-family: $font-display;
+                font-size: 430px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 93.187%;
+                /* 400.706px */
+                letter-spacing: -10.75px;
+                margin-top: -23px;
+
+                @include responsive(xl) {
+                  font-size: 336px;
+                  margin-top: -10px;
+                }
+
+
+                @include responsive(md) {
+                  font-size: 308px;
+                }
+
+                @include responsive(sm) {
+                  font-size: 134px;
+                  letter-spacing: -1.75px;
+                  margin-top: 0;
+                }
+
+                &:last-child {
+                  margin-top: -70px;
+                  margin-bottom: -26px;
+
+                  @include responsive(xl) {
+                    margin-bottom: 0;
+                    margin-top: -50px;
+                  }
+
+                  @include responsive(sm) {
+                    margin-top: -14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &-right {
+          margin-left: -370px;
+          @include flex(column, flex-end, flex-start);
+          gap: 22px;
+          @include responsive(xl) {
+            margin-left: -316px;
+            margin-bottom: 16px;
+            align-items: stretch;
+          }
+
+          @include responsive(md) {
+            margin-left: 0;
+          }
+
+          .wrapper {
+            position: relative;
+
+            @include responsive(xl) {
+              display: none;
+            }
+
+            .img-header {
+              max-width: 806px;
+            }
+
+            .btn-icon-secondary {
+              position: absolute;
+              bottom: 62px;
+              left: 28px;
+
+              @include responsive(xl) {
+                bottom: 55px;
+                left: 21px;
+              }
+            }
+          }
+
+          .item {
+            border-radius: 40px;
+            background: linear-gradient(180deg, #232932 0%, rgba(35, 41, 50, 0.00) 100%);
+            max-width: 388px;
+            padding: 32px 32px 8px;
+
+            @include responsive(xl) {
+              padding: 22px 22px 8px;
+            }
+
+            @include responsive(md) {
+              max-width: 100%;
+            }
+
+            &-text {
+              @include flex(column, flex-start, flex-start);
+              gap: 31px;
+
+              @include responsive(md) {
+                gap: 20px;
+              }
+
+              &-span {
+                color: $white;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+                opacity: 0.7;
+
+                @include responsive(md) {
+                  font-size: 16px;
+                }
+              }
+
+              &-desc {
+                color: var(--base-white, #FFF);
+                font-family: Creato Display;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                /* 38.4px */
+                margin-bottom: 28px;
+
+                @include responsive(md) {
+                  font-size: 20px;
+                  margin-bottom: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+    .running {
+      padding-block: 29px;
+      background-color: $dark-blue;
+
+      @include responsive(md) {
+        padding-block: 21px;
+      }
+
+      .slick-track {
+        @include flex(row, center, flex-start);
+        gap: 12px;
+      }
+
+      &-wrapper {
+        @include flex(row, center, space-between);
+        gap: 12px;
+
+        .content-text {
+          @include flex(row, center, space-between);
+          gap: 12px;
+
+          .text {
+            &-item {
+              color: $white;
+              font-family: $font-display-secondary;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 120%;
+              /* 28.8px */
+              text-transform: uppercase;
+
+              @include responsive(md) {
+                font-size: 20px;
+              }
+            }
+          }
+
+          img {
+            max-width: 14px;
+          }
+        }
+      }
+    }
+  }
+}

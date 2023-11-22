@@ -1,0 +1,112 @@
+.section-philosohpy {
+  padding-top: 110px;
+  padding-bottom: 80px;
+
+  @include responsive(md) {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    &-philosohpy {
+      flex-direction: column;
+      padding-inline: 16px;
+      gap: 52px;
+
+      @include responsive(md) {
+        gap: 32px;
+      }
+
+      .content {
+        &-top {
+          .subtext {
+            &-text {
+              @include flex(row, flex-start, space-between);
+              max-width: 1320px;
+              margin: auto;
+
+              @include responsive(md) {
+                flex-direction: column;
+                gap: 16px;
+              }
+
+              &-subtitle {
+                color: $white;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+
+                @include responsive(md) {
+                  font-size: 16px;
+                }
+              }
+
+              &-display {
+                color: $white;
+                font-family: $font-display-secondary;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 82%;
+                /* 82px */
+                max-width: 985px;
+
+                @include responsive(xxl) {
+                  max-width: 732px;
+                  font-size: 74px;
+                }
+
+                @include responsive(md) {
+                  font-size: 64px;
+                  max-width: 100%;
+                }
+
+                @include responsive(sm) {
+                  font-size: 34px;
+                }
+              }
+            }
+          }
+        }
+
+        &-bottom {
+          .subtext {
+            &-image {
+              position: relative;
+
+              .btn-link {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -20%);
+
+                @include responsive(xxl) {
+                  left: 49%;
+                  transform: translate(-49%, -30%);
+                }
+
+                @include responsive(md) {
+                  font-size: 14px;
+                  left: 50%;
+                    transform: translate(-50%, -30%);
+
+                  img {
+                    display: none;
+                  }
+                }
+
+                @include responsive(sm) {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

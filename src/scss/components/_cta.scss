@@ -1,0 +1,209 @@
+.section-cta {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include responsive(md) {
+    padding-block: 40px;
+  }
+
+  .container {
+    &-cta {
+      .content {
+        position: relative;
+        display: inline-flex;
+
+        &-top {
+          .subtext {
+            &-text {
+              &.top-left {
+                position: absolute;
+                top: 55px;
+                left: 44px;
+
+                @include responsive(md) {
+                  top: 30px;
+                  left: 20px;
+                }
+
+                @include responsive(sm) {
+                  top: 8px;
+                  left: 12px;
+                }
+              }
+
+              &.top-right {
+                position: absolute;
+                top: 48px;
+                right: 47px;
+
+                @include responsive(md) {
+                  top: 28px;
+                  right: 18px;
+                }
+
+                @include responsive(sm) {
+                  top: 8px;
+                  right: 12px;
+                }
+              }
+
+              &-span {
+                color: $black;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+
+                @include responsive(md) {
+                  font-size: 16px;
+                }
+
+                @include responsive(sm) {
+                  font-size: 8px;
+                }
+
+                img {
+                  max-width: 41px;
+                  vertical-align: middle;
+
+                  @include responsive(md) {
+                    max-width: 28px;
+                  }
+
+                  @include responsive(sm) {
+                    max-width: 16px;
+                  }
+                }
+              }
+
+              &-display {
+                color: $black;
+                font-family: $font-display-secondary;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 82%;
+                /* 82px */
+                max-width: 757px;
+                margin-top: 27px;
+
+                @include responsive(xl) {
+                  font-size: 64px;
+                  max-width: 507px;
+                }
+
+                @include responsive(md) {
+                  font-size: 64px;
+                  margin-top: 16px;
+                }
+
+                @include responsive(sm) {
+                  font-size: 22px;
+                  max-width: 160px;
+                  margin-top: 8px;
+                }
+              }
+
+              &-desc {
+                color: $black;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+
+                @include responsive(md) {
+                  font-size: 16px;
+                }
+
+                @include responsive(sm) {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+        }
+
+        &-bottom {
+          .subtext {
+            &-text {
+
+              &-desc {
+                color: $black;
+                font-family: $font-desc;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.2px;
+
+                @include responsive(md) {
+                  font-size: 16px;
+                }
+
+                @include responsive(sm) {
+                  font-size: 8px;
+                }
+
+                &.bottom-left {
+                  position: absolute;
+                  bottom: 47px;
+                  left: 50px;
+
+                  @include responsive(md) {
+                    bottom: 18px;
+                    left: 20px;
+                  }
+
+                  @include responsive(sm) {
+                    bottom: 8px;
+                    left: 12px;
+                  }
+                }
+              }
+
+              .btn-primary {
+                width: unset;
+                gap: 46px;
+
+                @include responsive(md) {
+                  font-size: 14px;
+                  gap: 8px;
+                  padding-left: 20px;
+
+                  img {
+                    max-width: 22px;
+                  }
+                }
+
+                @include responsive(sm) {
+                  font-size: 6px;
+                  padding: 4px;
+                  img {
+                    max-width: 10px;
+                  }
+                }
+
+                &.bottom-right {
+                  position: absolute;
+                  bottom: 0;
+                  right: 4px;
+                  @include responsive(sm) {
+                    right: 0;
+                    bottom: -5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

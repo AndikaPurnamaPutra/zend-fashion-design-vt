@@ -1,0 +1,125 @@
+.footer {
+  padding-block: 30px;
+
+  .container {
+    flex-direction: column;
+
+    .content {
+      &-top {
+        @include flex(row, center, space-between);
+        margin-bottom: 60px;
+        border-bottom: 1px solid rgba($color: $black, $alpha: 0.3);
+
+        @include responsive(xl) {
+          @include flex(column, flex-start, space-between);
+          gap: 24px;
+        }
+
+        @include responsive(md) {
+          margin-bottom: 0;
+        }
+
+        .logo {
+          max-width: 387px;
+
+          @include responsive(xl) {
+            max-width: 167px;
+          }
+
+          @include responsive(md) {
+            max-width: 92px;
+          }
+        }
+
+        .wrapper-menu {
+          @include flex(row, flex-start, space-between);
+          gap: 28px;
+
+          @include responsive(xl) {
+            width: 100%;
+          }
+
+          @include responsive(md) {
+            flex-direction: column;
+            gap: 18px;
+          }
+          .menu {
+            &-item {
+              width: 136px;
+
+              .item {
+                &-subtitle {
+                  color: $white;
+                  font-family: $font-desc;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%;
+                  /* 28px */
+                  letter-spacing: 0.2px;
+                  opacity: 0.7;
+                  margin-bottom: 22px;
+
+                  @include responsive(md) {
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                  }
+                }
+
+                &-nav {
+                  @include flex(column, flex-start, space-between);
+                  gap: 6px;
+
+                  .nav {
+                    &-link {
+                      color: $white;
+                      font-family: $font-desc;
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 150%;
+                      /* 24px */
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        @include flex(row, center, space-between);
+        margin-top: 30px;
+
+        @include responsive(md) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+        }
+
+        .mark {
+          color: $white;
+          font-family: $font-desc;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          /* 24px */
+        }
+
+        .social-media {
+          @include flex(row, center, space-between);
+          @include responsive(sm) {
+            width: 100%;
+            flex-direction: column;
+            gap: 16px;
+            .btn-outline {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
