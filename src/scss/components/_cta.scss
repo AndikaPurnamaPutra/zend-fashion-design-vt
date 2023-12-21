@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 40px;
 
-  @include responsive(md) {
+  @include responsive(lg) {
     padding-block: 40px;
   }
 
@@ -20,7 +20,7 @@
                 top: 55px;
                 left: 44px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   top: 30px;
                   left: 20px;
                 }
@@ -36,7 +36,7 @@
                 top: 48px;
                 right: 47px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   top: 28px;
                   right: 18px;
                 }
@@ -57,7 +57,7 @@
                 /* 28px */
                 letter-spacing: 0.2px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 16px;
                 }
 
@@ -69,7 +69,7 @@
                   max-width: 41px;
                   vertical-align: middle;
 
-                  @include responsive(md) {
+                  @include responsive(lg) {
                     max-width: 28px;
                   }
 
@@ -95,7 +95,7 @@
                   max-width: 507px;
                 }
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 64px;
                   margin-top: 16px;
                 }
@@ -117,7 +117,7 @@
                 /* 28px */
                 letter-spacing: 0.2px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 16px;
                 }
 
@@ -143,7 +143,7 @@
                 /* 28px */
                 letter-spacing: 0.2px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 16px;
                 }
 
@@ -156,7 +156,7 @@
                   bottom: 47px;
                   left: 50px;
 
-                  @include responsive(md) {
+                  @include responsive(lg) {
                     bottom: 18px;
                     left: 20px;
                   }
@@ -172,7 +172,7 @@
                 width: unset;
                 gap: 46px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 14px;
                   gap: 8px;
                   padding-left: 20px;

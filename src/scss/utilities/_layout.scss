@@ -32,7 +32,7 @@ section{
   padding-inline: 60px;
   flex-direction: row;
   // overflow: hidden;
-  @include responsive(md){
+  @include responsive(lg){
       flex-direction: column;
       padding-inline: 20px;
   }

@@ -1,6 +1,6 @@
 .section-products {
   padding-block: 80px;
-  @include responsive(md) {
+  @include responsive(lg) {
     padding-block: 40px;
   }
 
@@ -17,7 +17,7 @@
             gap: 16px;
           }
 
-          @include responsive(md) {
+          @include responsive(lg) {
             margin-bottom: 30px;
           }
 
@@ -48,14 +48,14 @@
               max-width: 565px;
             }
 
-            @include responsive(md) {
+            @include responsive(lg) {
               font-size: 64px;
             }
             @include responsive(sm) {
               font-size: 34px;
             }
 
-            @include responsive(md) {
+            @include responsive(lg) {
               max-width: 100%;
             }
 
@@ -72,9 +72,10 @@
             @include flex(row, flex-end, space-between);
             gap: 13px;
 
-            @include responsive(md) {
+            @include responsive(lg) {
               gap: 16px;
               flex-direction: column;
+              align-items: flex-start;
             }
           }
         }
@@ -87,7 +88,7 @@
     padding-inline: calc((100% - 1440px) / 2);
     margin-left: 60px;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       flex-direction: column;
       gap: 32px;
       padding-inline: 0;
@@ -98,7 +99,7 @@
       &-left {
         @include flex(column, flex-start, space-between);
 
-        @include responsive(md) {
+        @include responsive(lg) {
           width: 100%;
           gap: 24px;
           padding-inline: 20px;
@@ -136,7 +137,16 @@
               border-bottom: 1px dashed $white;
               /* 13.12px */
             }
+          }
 
+          .wrap-menu {
+            @include flex(column, center, null);
+            gap: 9px;
+
+            @include responsive(sm) {
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
           }
 
           .nav-link {
@@ -152,7 +162,7 @@
       }
 
       &-right {
-        @include responsive(md) {
+        @include responsive(lg) {
           width: 100%;
         }
 
@@ -163,7 +173,7 @@
           .slick-track {
             display: inline-flex;
             gap: 20px;
-            @include responsive(md) {
+            @include responsive(lg) {
               gap: 0;
             }
           }
@@ -173,7 +183,7 @@
             border-radius: 40px;
             width: 424px;
             gap: 25px;
-            @include responsive(md) {
+            @include responsive(lg) {
               padding-inline: 10px;
               max-width: unset;
               width: 100%;
@@ -186,7 +196,7 @@
             &-image {
               position: relative;
               display: inline-flex;
-              @include responsive(md) {
+              @include responsive(lg) {
                 max-width: 352px;
               }
 
@@ -272,7 +282,7 @@
                   /* 49.312px */
                   margin-bottom: 16px;
 
-                  @include responsive(md) {
+                  @include responsive(lg) {
                     font-size: 48px;
                   }
                 }

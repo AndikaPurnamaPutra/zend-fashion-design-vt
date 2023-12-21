@@ -1,7 +1,7 @@
 .section-article {
   padding-block: 80px;
 
-  @include responsive(md) {
+  @include responsive(lg) {
     padding-block: 40px;
   }
 
@@ -10,7 +10,7 @@
       flex-direction: column;
       gap: 38px;
 
-      @include responsive(md) {
+      @include responsive(lg) {
         gap: 32px;
       }
 
@@ -30,7 +30,7 @@
                 font-size: 74px;
               }
 
-              @include responsive(md) {
+              @include responsive(lg) {
                 font-size: 64px;
               }
 
@@ -43,7 +43,7 @@
                   max-width: 77px;
                   vertical-align: middle;
 
-                  @include responsive(md) {
+                  @include responsive(lg) {
                     max-width: 46px;
                   }
 
@@ -91,7 +91,7 @@
                 display: inline-flex;
                 margin-bottom: 37px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   margin-bottom: 16px;
                 }
               }
@@ -112,7 +112,7 @@
                     @include responsive(xl) {
                       font-size: 32px;
                     }
-                    @include responsive(md) {
+                    @include responsive(lg) {
                       font-size: 26px;
                       margin-bottom: 14px;
                     }
@@ -151,7 +151,7 @@
                       font-size: 16px;
                     }
                     
-                    @include responsive(md) {
+                    @include responsive(lg) {
                       font-size: 11px;
                       padding-left: 16px;
                       top: 3px;
@@ -168,7 +168,7 @@
                       @include responsive(xl) {
                         max-width: 28px;
                       }
-                      @include responsive(md) {
+                      @include responsive(lg) {
                         max-width: 18px;
                       }
                     }
@@ -189,7 +189,7 @@
                       font-size: 20px;
                     }
 
-                    @include responsive(md) {
+                    @include responsive(lg) {
                       font-size: 20px;
                       margin-bottom: 8px;
                     }

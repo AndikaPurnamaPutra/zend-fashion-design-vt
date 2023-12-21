@@ -24,12 +24,12 @@
     width: 100%;
     justify-content: space-between;
     gap: 16px;
-    @include responsive(md) {
+    @include responsive(lg) {
       font-size: 16px;
     }
     img {
       max-width: 52px;
-      @include responsive(md) {
+      @include responsive(lg) {
         max-width: 32px;
       }
     }

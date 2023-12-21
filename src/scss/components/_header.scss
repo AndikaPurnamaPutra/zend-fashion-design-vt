@@ -50,7 +50,7 @@
                 }
 
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 308px;
                 }
 
@@ -88,7 +88,7 @@
             align-items: stretch;
           }
 
-          @include responsive(md) {
+          @include responsive(lg) {
             margin-left: 0;
           }
 
@@ -125,7 +125,7 @@
               padding: 22px 22px 8px;
             }
 
-            @include responsive(md) {
+            @include responsive(lg) {
               max-width: 100%;
             }
 
@@ -133,7 +133,7 @@
               @include flex(column, flex-start, flex-start);
               gap: 31px;
 
-              @include responsive(md) {
+              @include responsive(lg) {
                 gap: 20px;
               }
 
@@ -148,7 +148,7 @@
                 letter-spacing: 0.2px;
                 opacity: 0.7;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 16px;
                 }
               }
@@ -163,7 +163,7 @@
                 /* 38.4px */
                 margin-bottom: 28px;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                   font-size: 20px;
                   margin-bottom: 18px;
                 }
@@ -180,7 +180,7 @@
       padding-block: 29px;
       background-color: $dark-blue;
 
-      @include responsive(md) {
+      @include responsive(lg) {
         padding-block: 21px;
       }
 
@@ -208,7 +208,7 @@
               /* 28.8px */
               text-transform: uppercase;
 
-              @include responsive(md) {
+              @include responsive(lg) {
                 font-size: 20px;
               }
             }

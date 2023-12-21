@@ -15,7 +15,7 @@
           gap: 24px;
         }
 
-        @include responsive(md) {
+        @include responsive(lg) {
           margin-bottom: 0;
         }
 
@@ -26,7 +26,7 @@
             max-width: 167px;
           }
 
-          @include responsive(md) {
+          @include responsive(lg) {
             max-width: 92px;
           }
         }
@@ -34,13 +34,13 @@
         .wrapper-menu {
           @include flex(row, flex-start, space-between);
           gap: 28px;
+          flex-wrap: wrap;
 
           @include responsive(xl) {
             width: 100%;
           }
 
-          @include responsive(md) {
-            flex-direction: column;
+          @include responsive(lg) {
             gap: 18px;
           }
           .menu {
@@ -60,7 +60,7 @@
                   opacity: 0.7;
                   margin-bottom: 22px;
 
-                  @include responsive(md) {
+                  @include responsive(lg) {
                     font-size: 18px;
                     margin-bottom: 16px;
                   }
@@ -92,7 +92,7 @@
         @include flex(row, center, space-between);
         margin-top: 30px;
 
-        @include responsive(md) {
+        @include responsive(lg) {
           flex-direction: column;
           align-items: flex-start;
           gap: 24px;
